@@ -4,8 +4,8 @@
 [![rank](https://make.fun/badge/csv-reader-speed-01-run-20261121/penawarlawas/makefun-csv-reader-01/rank.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
 [![reward](https://make.fun/badge/csv-reader-speed-01-run-20261121/penawarlawas/makefun-csv-reader-01/reward.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
 
-A drop-in replacement for the house `csv-reader 1.0.0` that produces byte-identical
-output on every input while using about a third of the CPU. The reference builds each
+A drop-in replacement for the house `csv-reader 1.0.0` that produced byte-identical
+output on all six practice cases while using about a third of the CPU in one local comparison. The reference builds each
 field one character at a time (`value += c`) and calls a closure per character; this
 reads the text in runs, finding each delimiter with `charCodeAt` comparisons and
 slicing whole runs in one allocation. Semantics are the reference's, branch for branch:
